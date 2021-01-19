@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0", />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+  <title>The Grocery Store</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img style="vertical-align: bottom" src="./logo.png" alt="logo"/>
+            </div>
+            <h1>The Grocery Store</h1>
+            <ul>
+                <li><a data-page="home" href="#">Home</a></li>
+                <li><a data-page="about" href="#">About</a></li>
+                <li><a data-page="shop" href="#">Shop</a></li>
+                <li><a data-page="contact" href="#">Contact</a></li>
+                <div class="scroll">   
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section data-index="0" class="home">
+        <h2>Home</h2>
+        <p>OPEN DAILY <br> <br>Visit us at Lorem Ipsum</p>
+    </section>
+    <section data-index="1" class="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum leo gravida sem fringilla, ac scelerisque diam viverra.<br>Maecenas porta mauris ut mi vestibulum imperdiet. Nulla quis sapien fermentum, convallis dui non, commodo ex.
+            <br>Phasellus facilisis non odio sed blandit. Cras at nibh risus.<br>Ut convallis feugiat elit, nec congue odio consequat et. Nam sodales, dolor ac molestie fermentum, tortor justo luctus mi, quis varius dolor nunc non nulla. 
+            <br>
+            </p>
+    </section>
+    <section data-index="2" class="shop">
+        <h2 class="shop_title">Shop</h2>
+        <div class="allshop">
+        <div class="card">
+            <div class="image">
+            <img src="./cherry.PNG" alt="cherry" />
+            </div>
+            <div class="img_text">
+                <h2 class="cherry_des">Cherries 250g</h2>
+                <p class="cherry_des"> Australian grown cherries</p>
+                <p class="cherry_des">$12.99</p>
+            </div>
+            <div class="stats">
+                <button>ADD</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+            <img src="./mel.png" alt="melon" />
+            </div>
+            <div class="img_text">
+                <h2 class="cherry_des">Watermelon</h2>
+                <p class="cherry_des"> Australian grown Watermelon</p>
+                <p class="cherry_des">$3.99</p>
+            </div>
+            <div class="stats">
+                <button>ADD</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+            <img src="./cheddar.PNG" alt="cheddar" />
+            </div>
+            <div class="img_text">
+                <h2 class="cherry_des">Cheddar</h2>
+                <p class="cherry_des">Mediterranean imported Cheddar</p>
+                <p class="cherry_des">$22.99</p>
+            </div>
+            <div class="stats">
+                <button>ADD</button>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <section data-index="3" class="contact">
+        <h2>Contact</h2>
+    <form class="contactus" action="index.html" method="post">
+        <input class="contactus_txt" type="text" name="" value="" placeholder="NAME">
+        <input class="contactus_txt" type="email" name="" value="" placeholder="E-MAIL">
+        <input class="contactus_txt" type="number" name="" value="" placeholder="MOBILE NUMBER">
+        <textarea class="contactus_txt" placeholder=""></textarea>
+        <input type="submit" class="contactus_btn" value="Send"> 
+    </form>  
+    </section>
+    </main>
+    <footer>
+        <p class="author">Created by Phil Juricev<br>Brisbane, 2021</p>
+    </footer>
+  <script src="./app.js"></script>
+</body>
+</html>

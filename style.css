@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding-top: 2cm;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.author{
+    padding-top: 1px;
+    vertical-align: top;
+    text-align: center;
+    color: black;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body .shop{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+    column-gap: 20px;
+}
+
+header{
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0px;
+    background: whitesmoke;
+}
+
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+nav h1,nav ul{
+    padding-left: 5cm;
+    font-size: 1.5rem;
+    flex: 1
+}
+
+nav h1{
+    padding-left: 0;
+    font-size:48px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+section{
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2{
+    align-self: center;
+    flex-direction: column;
+    padding-top: 1.5cm;
+    font-size: 3rem;
+    color: white;
+}
+
+.home {
+    background: linear-gradient(to right top, #f46b45,#eea849);
+    min-height: 50vh;
+}
+.about {
+    background: linear-gradient(to right top, #005c97,#363795);
+    min-height: 100vh;
+}
+.shop {
+    background: linear-gradient(to right top, #e53935,#e35d5b);
+    flex-direction: column;
+}
+.contact {
+    background: linear-gradient(to right top, #84dbeb,#0bafe0);
+}
+
+.shop h2{
+    padding-bottom: 5rem;
+    font-size: 108px;
+}
+
+.scroll{
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to right top, #f46b45,#eea849);
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo{
+    height: 75px;
+    width: 75px;
+}
+
+.allshop{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.allshop h2{
+    padding-bottom: 1rem;
+    font-size: 36px;
+}
+
+.card{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "img_text" "stats";
+    grid-column-gap: 2cm;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.image{
+    grid-area: image;
+}
+
+.text{
+    grid-area: img_text;
+}
+
+.cherry_des{
+    color: black;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.stats{
+    grid-area: stats;
+}
+
+.stats button{
+    width:75%;
+    padding:1rem 0rem;
+    background: #08e700;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.contactus{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contactus_txt{
+    display: block;
+    align-content: center;
+    widows: 100%;
+    max-height: 3cm;
+    box-sizing: border-box;
+    margin: 15px 0;
+    border: 0;
+    background: whitesmoke;
+    padding: 20px 100px;
+    outline: none;
+    color: black;
+}
+
+.contactus_txt:hover{
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.3);
+}
+
+textarea.contactus_txt{
+    text-align: left;
+    resize: none;
+    height: 150px;
+}
+
+input{
+    text-align: center;
+}
+
+.contactus_btn{
+    float: center;
+    width:75%;
+    padding:1rem 0rem;
+    background: #087030;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.contactus_btn:hover{
+    background: #08e700;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color:blue;
+    text-align: center;
+}
+
